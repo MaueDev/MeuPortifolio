@@ -1,10 +1,14 @@
 import './App.css';
 import * as React from "react";
 import { motion } from "framer-motion";
+/* IMG*/
 import ProfileImg from  '../../img/profile.jpg'; 
 import BrazilLing from  '../../img/flags/brasil.jpg';
 import InglishLing from  '../../img/flags/espanhol.png';
 import SpanishLing from  '../../img/flags/inglish.jpg';
+import LinkedinImg from  '../../img/socialmidia/LinkedIn.jpg';
+import GithubImg from  '../../img/socialmidia/GitHub.png';
+/* IMG*/
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -58,23 +62,40 @@ function App() {
                 </motion.li>
             </motion.ul>
           </div>
-          <div>
-          <div className='topicItem'>
-            <p>
-              Oe sou o Maue Oe sou o Maue Oe sou o Maue Oe sou o Maue
-              Oe sou o Maue
-              Oe sou o Maue
-              Oe sou o Maue
-              Oe sou o Maue
-            </p>
-          </div>
+          <div className='topicContent'>
+            <div className='topicItem'>
+              <p>
+                Oi! Eu sou Mauricio Rodrigues conhecido como MAUE. Brasileiro apaixonado por Desenvolvimento WEB.
+              </p>
+            </div>
 
             <div className='topicItem'>
-              <h4>Location:</h4>
-              <p>lore</p>
+              <h4>Localização:</h4>
+              <p>Brazil, Minas Gerais.</p>
             </div>
-            <div className='topicItem'></div>
-            <div className='topicItem'></div>
+            <div className='topicItem'>
+              <h4>Formação:</h4>
+              <p>Cursando Analise e desenvonvimento de Sistema.<br></br><small>Universidade Estácio de Sá</small></p>
+            </div>
+            <div className='topicItem'>
+              <h4>Trabalho:</h4>
+              <p>Analista de Suporte ERP || Desenvolvedor Web.<br></br><small>Expert Sistemas</small></p>
+            </div>
+          </div>
+        </div>
+        <div className='MidiaSocial'>
+          <h2>Midias Sociais:</h2>
+          <div className='MidiaContent'>
+            <div className='MidiaItem'>
+              <img src={LinkedinImg}/>
+            </div>
+            <div className='MidiaItem'>
+              <img src={GithubImg}/>
+            </div>
+            <div className='MidiaItem'></div>
+            <div className='MidiaItem'></div>
+            <div className='MidiaItem'></div>
+            <div className='MidiaItem'></div>
           </div>
         </div>
       </header>

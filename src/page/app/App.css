@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
   margin: 0;
   padding: 0;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(240, 240, 240);
 }
 .Menu
 {
@@ -56,6 +57,7 @@
 
 .MenuDescription
 {
+  color:#242424;
   min-height: 75px;
   display: flex;
   justify-content: center;
@@ -74,7 +76,7 @@
   min-width: 120px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 20px;
 }
 .FlagContent
@@ -82,7 +84,7 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
 }
 
@@ -97,4 +99,66 @@
   height: 20px;
   border-radius: 2px;
   border: 0.2px  solid #f1f1f1;
+}
+
+.topicContent
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.topicItem:first-child
+{
+  font-family: 'Roboto', sans-serif;
+  margin-top: none;
+  margin-left: none;
+  text-align: center;
+}
+.topicItem
+{
+  margin-left: 10px;
+  margin-top: 10px;
+  color:#575757;
+  width: 100%;
+}
+
+.topicItem p
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.MidiaSocial
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.MidiaContent
+{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.MediaContent h2
+{
+  width: 100%;
+  text-align: center;
+
+}
+.MidiaItem 
+{
+  width: 25%;
+  min-width: 100px;
+}
+.MidiaItem img
+{
+  width: 100%;
 }
