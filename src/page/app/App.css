@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(209, 209, 209);
+}
+.Menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+.MenuDivider
+{
+  width: 100%;
+  min-height: 75px;
+  height: 50%;
+  background: rgb(0,20,255);
+  background: linear-gradient(90deg, rgb(0, 166, 255) 100%, rgb(0, 187, 255) 37%, rgba(0,212,255,1) 100%);
+  position: relative;
+  border-bottom: 2px  solid #f1f1f1;
+  
+}
+
+.MenuContent, .Main
+{
+  display: flex;
+  width: 100%;
+  background: transparent;
+}
+
+.MenuLogo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(254,254,254);
+  background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(251,251,251,1) 24%, rgba(241,241,241,1) 100%);
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px  solid #f1f1f1;
+  overflow: hidden;
+}
+
+.MenuLogo img
+{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.MenuDescription
+{
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 150px;
+  width: 100%;
+  background: transparent;
+}
+
+.Flags
+{
+  
+  margin-left: 20px;
+  width: 120px;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.FlagContent
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.itemFlag
+{
+  width: 30%;
+}
+
+.itemFlag img
+{
+  width: 100%;
+  height: 20px;
+  border-radius: 2px;
+  border: 0.2px  solid #f1f1f1;
+}
