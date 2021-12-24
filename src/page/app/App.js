@@ -8,7 +8,31 @@ import InglishLing from  '../../img/flags/espanhol.png';
 import SpanishLing from  '../../img/flags/inglish.jpg';
 import LinkedinImg from  '../../img/socialmidia/LinkedIn.jpg';
 import GithubImg from  '../../img/socialmidia/GitHub.png';
+import TwitterImg from  '../../img/socialmidia/twitter.jpg';
+import InstagramImg from  '../../img/socialmidia/instagram.png';
+import FacebookImg from  '../../img/socialmidia/facebook.jpg';
+import WhatsappImg from  '../../img/socialmidia/whatsapp.jpg';
 /* IMG*/
+const PortuguesBr =
+{
+  Bio: "Oi! Eu sou Mauricio Rodrigues conhecido como MAUE. Brasileiro apaixonado por Desenvolvimento WEB.",
+  Local : {
+    Title: "Localização:",
+    Body: "Brazil, Minas Gerais."
+  },
+  studies:
+  {
+    Title: "Formação:",
+    Body: "Cursando Analise e Desenvonvimento de Sistema.",
+    Small:"Universidade Estácio de Sá"
+  },
+  work:
+  {
+    Title: "Trabalho:",
+    Body: "Analista de Suporte ERP || Desenvolvedor Web.",
+    Small: "Expert Sistemas"
+  }
+}
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -31,6 +55,7 @@ const item = {
   }
 };
 
+
 function App() {
   return (
     <div className="App">
@@ -40,9 +65,9 @@ function App() {
           <motion.div className='MenuLogo' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 260,damping: 20}}>
             <img src={ProfileImg}/>
           </motion.div>
-          <div className='MenuDescription'>
-            <h1>Mauricio Rodrigues</h1>
-          </div>
+          <motion.div className='MenuDescription' variants={container} initial="hidden" animate="visible">
+            <motion.h1 variants={item}>Mauricio Rodrigues</motion.h1>
+          </motion.div>
         </div>
         <div className='Main'>
           <div className='Flags'>
@@ -62,42 +87,51 @@ function App() {
                 </motion.li>
             </motion.ul>
           </div>
-          <div className='topicContent'>
-            <div className='topicItem'>
+          <motion.div className='topicContent' variants={container} initial="hidden" animate="visible">
+            <motion.div className='topicItem' variants={item}>
               <p>
                 Oi! Eu sou Mauricio Rodrigues conhecido como MAUE. Brasileiro apaixonado por Desenvolvimento WEB.
               </p>
-            </div>
+            </motion.div>
 
-            <div className='topicItem'>
+            <motion.div className='topicItem' variants={item}>
               <h4>Localização:</h4>
               <p>Brazil, Minas Gerais.</p>
-            </div>
-            <div className='topicItem'>
+            </motion.div>
+            <motion.div className='topicItem' variants={item}>
               <h4>Formação:</h4>
-              <p>Cursando Analise e desenvonvimento de Sistema.<br></br><small>Universidade Estácio de Sá</small></p>
-            </div>
-            <div className='topicItem'>
+              <p>Cursando Analise e Desenvonvimento de Sistema.<br></br><small>Universidade Estácio de Sá</small></p>
+            </motion.div>
+            <motion.div className='topicItem' variants={item}>
               <h4>Trabalho:</h4>
               <p>Analista de Suporte ERP || Desenvolvedor Web.<br></br><small>Expert Sistemas</small></p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-        <div className='MidiaSocial'>
-          <h2>Midias Sociais:</h2>
-          <div className='MidiaContent'>
-            <div className='MidiaItem'>
+        <motion.div className='MidiaSocial' variants={container} initial="hidden" animate="visible">
+          <motion.h2 variants={item}>Midias Sociais:</motion.h2>
+          <motion.div className='MidiaContent'>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
               <img src={LinkedinImg}/>
-            </div>
-            <div className='MidiaItem'>
+            </motion.div>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
               <img src={GithubImg}/>
-            </div>
-            <div className='MidiaItem'></div>
-            <div className='MidiaItem'></div>
-            <div className='MidiaItem'></div>
-            <div className='MidiaItem'></div>
-          </div>
-        </div>
+            </motion.div>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
+              <img src={TwitterImg}/>
+            </motion.div>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
+              <img src={InstagramImg}/>
+            </motion.div>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
+              <img src={FacebookImg}/>
+            </motion.div>
+            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
+              <img src={WhatsappImg}/>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+        
       </header>
     </div>
   );
