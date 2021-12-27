@@ -34,6 +34,47 @@ const PortuguesBr =
   }
 }
 
+const Ingles =
+{
+  Bio: "Hi! i am Mauricio Rodrigues known as Maue, Brazilian in love with Web Development and information Technology",
+  Local : {
+    Title: "Location:",
+    Body: "Brazil, Minas Gerais."
+  },
+  studies:
+  {
+    Title: "Education:",
+    Body: "Studying systems analysis and development.",
+    Small:"University Estácio de Sá"
+  },
+  work:
+  {
+    Title: "Work:",
+    Body: "Support Analyst ERP || Web Development.",
+    Small: "Expert Sistemas"
+  }
+}
+
+const Espanhol =
+{
+  Bio: "¡Hola! Soy Mauricio Rodrigues conocido como MAUE. Brasileño enamorado de la programación WEB ",
+  Local : {
+    Title: "localización:",
+    Body: "Brazil, Minas Gerais."
+  },
+  studies:
+  {
+    Title: "Educación:",
+    Body: "Estudiando tecnología en Análisis y Desarrollo de Sistemas de Información.",
+    Small:"Universidad Estácio de Sá"
+  },
+  work:
+  {
+    Title: "Trabajo:",
+    Body: "Analista de soporte ERP  || Desarrollo web.",
+    Small: "Expert Sistemas"
+  }
+}
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
