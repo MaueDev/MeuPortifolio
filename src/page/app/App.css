@@ -92,6 +92,11 @@
 {
   width: 30%;
 }
+.itemFlag:hover
+{
+ cursor: pointer;
+ width: 30.2%;
+}
 
 .itemFlag img
 {
