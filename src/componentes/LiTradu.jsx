@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import BrazilLing from  '../img/flags/brasil.jpg';
 import InglishLing from  '../img/flags/espanhol.png';

@@ -13,6 +13,7 @@ import WhatsappImg from  '../../img/socialmidia/whatsapp.jpg';
 /* IMG*/
 /* Componente*/
 import LiTradu from "../../componentes/LiTradu"
+import MidiaSocial from '../../componentes/SocialMidia';
 /* Componente*/
 const PortuguesBr =
 {
@@ -102,24 +103,12 @@ function App() {
         <motion.div className='MidiaSocial' variants={container} initial="hidden" animate="visible">
           <motion.h2 variants={item}>Midias Sociais:</motion.h2>
           <motion.div className='MidiaContent'>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={LinkedinImg} alt='Linkedin'/>
-            </motion.div>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={GithubImg} alt='GitHub'/>
-            </motion.div>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={TwitterImg} alt='Twitter'/>
-            </motion.div>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={InstagramImg} alt='Instagram'/>
-            </motion.div>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={FacebookImg} alt='Facebook'/>
-            </motion.div>
-            <motion.div className='MidiaItem' initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{type: "spring",stiffness: 300,damping: 50}}>
-              <img src={WhatsappImg} alt='Whatsapp'/>
-            </motion.div>
+            <MidiaSocial URLBLANK='https://www.linkedin.com/in/mauricio-rodrigues-mauedev/' IMGSRC={LinkedinImg} IMGALT="Linkedin"/>
+            <MidiaSocial URLBLANK='https://github.com/MaueDev' IMGSRC={GithubImg} IMGALT="GitHub"/>
+            <MidiaSocial URLBLANK='https://twitter.com/MaueDev' IMGSRC={TwitterImg} IMGALT="Twitter"/>
+            <MidiaSocial URLBLANK='https://www.instagram.com/mauricio_rodrigues_21/' IMGSRC={InstagramImg} IMGALT="Instagram"/>
+            <MidiaSocial URLBLANK='https://www.facebook.com/maue.mauriciorodrigues/' IMGSRC={FacebookImg} IMGALT="Facebook"/>
+            <MidiaSocial URLBLANK='https://api.whatsapp.com/send?phone=5534999914803&text=Oe%20vim%20atrav%C3%A9s%20do%20seu%20portifolio' IMGSRC={WhatsappImg} IMGALT="Whatsapp"/>
           </motion.div>
         </motion.div>
         
