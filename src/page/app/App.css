@@ -139,6 +139,7 @@
 .MidiaSocial
 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -146,12 +147,15 @@
 }
 .MidiaContent
 {
-  margin-top: 5px;
-  height: 300px;
-  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 500px;
+  margin: 5px 0 5px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: stretch;
+
 }
 .MediaContent h2
 {
@@ -161,10 +165,13 @@
 }
 .MidiaItem 
 {
+  margin: 3px;
+  flex: 1;
   height: 90px;
-  max-width: 110px;
-  width: 25%;
-  min-width: 95px;
+  max-width: 100px;
+  max-height: 85px;
+  width: 100%;
+  min-width: 125px;
   border-radius: 10px;
   background-color: #fff;
   display: flex;
@@ -192,18 +199,38 @@
     display: flex;
     flex-direction: column;
   }
-  .MenuLogo
+  .MenuLogo,.Flags
   {
  
-    left: 50%;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; 
 
+  }
+  .Flags
+  {
+    background-color:transparent;
+  }
   .MenuDescription
   {
     margin-left: 0;
     margin-top: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 422px) {
+  .MidiaItem 
+  {
+    width: 50%;
+    max-width: none !important;
+    border-radius: 3px;
+  }
+  .MidiaItem img
+  {
+    border-radius: 3px;
   }
 }
