@@ -22,7 +22,8 @@ const PortuguesBr =
     Title: "Trabalho:",
     Body: "Analista de Suporte ERP || Desenvolvedor Web.",
     Small: "Expert Sistemas"
-  }
+  },
+  BtnDownload: "Baixar Currículo"
 }
 
 const Ingles =
@@ -43,7 +44,8 @@ const Ingles =
     Title: "Work:",
     Body: "Support Analyst ERP || Web Development.",
     Small: "Expert Sistemas"
-  }
+  },
+  BtnDownload: "Download Resume"
 }
 
 const Espanhol =
@@ -64,7 +66,8 @@ const Espanhol =
     Title: "Trabajo:",
     Body: "Analista de soporte ERP  || Desarrollo web.",
     Small: "Expert Sistemas"
-  }
+  },
+  BtnDownload: "Currículum"
 }
 var Tradu;
 const container = {
@@ -101,6 +104,7 @@ class LiTradu extends Component {
     let TrabalhoTitle   = document.querySelector("#TrabalhoTile");
     let TrabalhoContent = document.querySelector("#TrabalhoContent");
     let TrabalhoSmall   = document.querySelector("#TrabalhoSmall");
+    let BtnDownload     = document.querySelector("#BtnDownload");
 
     Bio.textContent             = event.Bio;
     LocalTitle.textContent      = event.Local.Title;
@@ -111,6 +115,7 @@ class LiTradu extends Component {
     TrabalhoTitle.textContent   = event.work.Title;
     TrabalhoContent.textContent = event.work.Body;
     TrabalhoSmall.textContent   = event.work.Small;
+    BtnDownload.textContent     = event.BtnDownload;
   }
   Traducao(event)
    {

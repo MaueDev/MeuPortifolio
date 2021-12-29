@@ -244,6 +244,11 @@
   {
     margin-top: 0px;
   }
+  .topicItem
+  {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .topicItem:nth-child(2)
   {
     margin-top: 0 !important;
