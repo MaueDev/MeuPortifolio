@@ -76,6 +76,7 @@ function App() {
           <div className='Flags'>
            <LiTradu>
            </LiTradu >
+           <button onClick={() => window.open('/CurricMauricioRodrigues.pdf', '_blank')} download>Baixar Currículo</button>
           </div>
           <motion.div className='topicContent' variants={container} initial="hidden" animate="visible">
             <motion.div className='topicItem' variants={item}>

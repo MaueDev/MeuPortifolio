@@ -62,7 +62,6 @@
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  margin-left: 150px;
   width: 100%;
   background: transparent;
 }
@@ -70,7 +69,7 @@
 .Flags
 {
   position: absolute;
-  top: 160px;
+  top: 159px;
   margin-left: 20px;
   width: 120px;
   min-width: 120px;
@@ -78,6 +77,17 @@
   justify-content: center;
   align-items: flex-start;
   margin-right: 20px;
+  flex-wrap: wrap;
+}
+.Flags button
+{
+  width: 100%;
+  height: 30px;
+  background-color: #00A6FF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 .FlagContent
 {
@@ -113,7 +123,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
 .topicItem:first-child
@@ -122,13 +131,20 @@
   margin-top: none;
   margin-left: none;
   text-align: center;
+  padding: 15px;
 }
 .topicItem
 {
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   color:#575757;
   width: 100%;
+}
+
+.topicItem:nth-child(2)
+{
+  margin-top: 25px;
+
 }
 
 .topicItem p
@@ -138,6 +154,7 @@
 
 .MidiaSocial
 {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,6 +212,11 @@
 
 
 @media screen and (max-width: 1075px) {
+  .MenuDescription
+  {
+    min-height: 0 !important;
+    margin-left: 150px;
+  }
   .MenuContent {
     display: flex;
     flex-direction: column;
@@ -216,10 +238,22 @@
   .MenuDescription
   {
     margin-left: 0;
-    margin-top: 90px;
+    margin-top: 146px;
   }
+  .topicContent
+  {
+    margin-top: 0px;
+  }
+  .topicItem:nth-child(2)
+  {
+    margin-top: 0 !important;
 
-
+  }
+  .topicItem:nth-child(1)
+  {
+    margin-top: 5px !important;
+    padding: 0 !important;
+  }
 }
 
 @media screen and (max-width: 422px) {
