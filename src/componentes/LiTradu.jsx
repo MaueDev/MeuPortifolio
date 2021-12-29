@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
 import BrazilLing from  '../img/flags/brasil.jpg';
-import InglishLing from  '../img/flags/espanhol.png';
-import SpanishLing from  '../img/flags/inglish.jpg';
+import InglishLing from  '../img/flags/inglish.jpg';
+import SpanishLing from  '../img/flags/espanhol.png';
 
 const PortuguesBr =
 {
