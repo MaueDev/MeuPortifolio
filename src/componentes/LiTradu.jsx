@@ -69,7 +69,6 @@ const Espanhol =
   },
   BtnDownload: "Currículum"
 }
-var Tradu;
 const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {

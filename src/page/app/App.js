@@ -1,4 +1,6 @@
 import './App.css';
+import TagManager from 'react-gtm-module'
+
 import * as React from "react";
 import { motion } from "framer-motion";
 /* IMG*/
@@ -59,7 +61,12 @@ const item = {
   }
 };
 
+const tagManagerArgs = {
+  gtmId: 'GTM-KQ3KXMT'
+};
+
 function App() {
+  TagManager.initialize(tagManagerArgs)
   return (
     <div className="App">
       <header className='Menu'>
@@ -87,7 +94,7 @@ function App() {
 
             <motion.div className='topicItem' variants={item}>
               <h4 id="Local">Localização:</h4>
-              <p id='LocalContant' >Brazil, Minas Gerais.</p>
+              <p id='LocalContant' >Brazil, Votuporanga - SP.</p>
             </motion.div>
             <motion.div className='topicItem' variants={item}>
               <h4 id='FormacaoTitle'>Formação:</h4>
@@ -96,8 +103,8 @@ function App() {
             </motion.div>
             <motion.div className='topicItem' variants={item}>
               <h4 id="TrabalhoTile">Trabalho:</h4>
-              <p id="TrabalhoContent">Analista de Suporte ERP || Desenvolvedor Web</p>
-              <small id="TrabalhoSmall">Expert Sistemas</small>
+              <p id="TrabalhoContent">Desenvolvedor Web Jr</p>
+              <small id="TrabalhoSmall">UPPER Softwares</small>
             </motion.div>
           </motion.div>
         </div>
